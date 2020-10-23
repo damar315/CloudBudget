@@ -1,6 +1,6 @@
 <template>
   <div class="container2">
-    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+    <div class="row">
       <div class="col-lg-6">
         <h2 class="text-left">Stay focused on saving money</h2>
         <p class="text-justify">
@@ -23,19 +23,10 @@
         </div>
       </div>
       <div
-        id="slider"
-        class="carousel slide"
+        id="carouselExampleControls"
+        class="col-lg-6"
         data-ride="carousel"
       >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../assets/Video_bg.svg" class="d-block w-100" alt="..." />
@@ -49,7 +40,7 @@
         </div>
         <a
           class="carousel-control-prev"
-          href="#slider"
+          href="#carouselExampleControls"
           role="button"
           data-slide="prev"
         >
@@ -58,7 +49,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#slider"
+          href="#carouselExampleControls"
           role="button"
           data-slide="next"
         >
@@ -80,6 +71,7 @@ export default {
 .container2 {
   background-color: #ed4c5c;
 }
+
 .text-left {
   padding-top: 122px;
   padding-left: 27px;
@@ -115,7 +107,10 @@ export default {
 .links ul li a:hover {
   color: #0f0474;
 }
-#slider{
-  justify-content: center;
+.col-lg-6{
+  margin-top: 50px;
+}
+.row{
+  margin-left: 10px;
 }
 </style>

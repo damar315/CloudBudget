@@ -46,6 +46,7 @@ export default {
 .row{
     padding-left: 50px;
     padding-top: 52px;
+    margin-left: 50px;
 }
 h1 {
     font-style: normal;
